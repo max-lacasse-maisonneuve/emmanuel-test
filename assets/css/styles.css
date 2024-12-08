@@ -1,0 +1,751 @@
+@import url("reset.css");
+
+@font-face {
+  font-family: "nasa";
+  src: url("../fonts/nasalization-rg.otf");
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+  font-family: nasa;
+  transition: all 350ms ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.675) 0%,
+      rgba(0, 0, 0, 0.418) 10%,
+      rgba(0, 0, 0, 0.219) 90%,
+      rgba(0, 0, 0, 0.685) 100%
+    ),
+    url("../img/4k-earth-blue-flare-xd07028747gejbm0.jpg");
+  background-size: contain;
+}
+
+.nav-principal {
+  background-color: black;
+  position: fixed;
+  width: 100%;
+  height: 65px;
+  padding: 10px;
+  align-content: center;
+  z-index: 6000;
+  top: 0;
+}
+
+.nav-principal ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 3%;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-principal ul li {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  /* margin-right: 20px; */
+  color: #bbbbbb;
+  font-size: 1.5rem;
+  align-content: center;
+}
+
+.nav-principal ul li a {
+  display: flex;
+  color: #bbbbbb;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  border-radius: 15px;
+}
+
+.nav-principal ul li a:hover {
+  color: rgb(255, 255, 255);
+  transition: all 350ms ease-in-out;
+  transform: scale(1.03);
+}
+
+.nav-principal ul li:hover {
+  background-color: #151515;
+  padding: 0.8%;
+  border-radius: 15px;
+  transition: all 350ms ease-in-out;
+}
+
+header {
+  min-height: 100vh;
+}
+
+main section {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.325) 10%,
+    rgba(0, 0, 0, 0.325) 90%,
+    rgb(0, 0, 0) 100%
+  );
+  background-color: rgb(19, 19, 19);
+  min-height: 100vh;
+
+  background-color: #151515;
+}
+
+.texteSurPlanetes h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1%;
+  padding-top: 2.5%;
+}
+
+.texteSurPlanetes h2 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+main section div img {
+  border-radius: 10px;
+  margin-left: 15%;
+  margin-top: 2%;
+  height: 90vh;
+  box-shadow: 0 0 8px rgba(171, 170, 170, 0.5);
+}
+
+main section div ul {
+  display: flex;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section ul li {
+  color: white;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.texteSurPlanetes {
+  padding: 1%;
+}
+
+.listePlanetes {
+  text-align: center;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.listePlanetes ul {
+  list-style: none;
+  padding-top: 1.5%;
+}
+
+.listePlanetes ul li {
+  display: inline;
+  margin-right: 20px;
+  color: #bbbbbb;
+  font-size: 1.5rem;
+}
+
+.listePlanetes ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1%;
+  border-radius: 15px;
+  transition: background-color 1s;
+}
+
+.listePlanetes li a:hover {
+  /* transform: scale(1.9); */
+  color: white;
+  text-decoration: underline;
+  transition: all 400ms ease-in-out;
+}
+
+.listePlanetes h1 {
+  color: white;
+  font-family: nasa;
+}
+
+.DescriptionPlanetes {
+  padding-top: 10%;
+}
+
+.conteneur-description {
+  width: 95%;
+
+  margin-left: auto;
+  margin-right: auto;
+  border: solid red 2px;
+}
+
+.titreplanete {
+  padding-top: 15%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.titreplanetes {
+  padding-top: 5%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section-planetes h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.section-planetes h2 {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+#mercure {
+  color: white;
+  margin-left: -5%;
+  display: flex;
+  scroll-margin-top: 60px;
+}
+
+#mercure p {
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#venus {
+  color: white;
+  display: flex;
+  scroll-margin-top: 60px;
+}
+
+#venus p {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.2rem;
+  height: 80vh;
+}
+
+#venus img {
+  margin-left: 7%;
+  height: 60%;
+  width: 50%;
+}
+
+#terre {
+  color: white;
+  display: flex;
+  margin-left: -5%;
+  scroll-margin-top: 60px;
+}
+
+#terre p {
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#terre img {
+  max-width: 50%;
+  height: 40%;
+}
+
+#Mars {
+  color: white;
+  display: flex;
+  scroll-margin-top: 60px;
+}
+
+#Mars p {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#Mars img {
+  margin-left: 7%;
+  height: 90vh;
+}
+
+#Jupiter {
+  color: white;
+  display: flex;
+  margin-left: -5%;
+  scroll-margin-top: 60px;
+}
+
+#Jupiter p {
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#Jupiter img {
+  height: 90vh;
+}
+
+#saturne {
+  color: white;
+  display: flex;
+  scroll-margin-top: 60px;
+}
+
+#saturne p {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#saturne img {
+  margin-left: 7%;
+  height: 90vh;
+}
+
+#uranus {
+  color: white;
+  display: flex;
+  margin-left: -5%;
+  scroll-margin-top: 60px;
+}
+
+#uranus p {
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#uranus img {
+  height: 90vh;
+}
+
+#neptune {
+  color: white;
+  display: flex;
+  scroll-margin-top: 60px;
+}
+
+#neptune p {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#neptune img {
+  margin-left: 7%;
+  height: 87vh;
+}
+
+.fin_description_planetes nav {
+  font-size: 1.5rem;
+  margin-top: 1%;
+}
+
+.fin_description_planetes nav ul li a {
+  font-size: 1.5rem;
+  color: #bbbbbb;
+  list-style: none;
+  text-decoration: none;
+}
+
+.fin_description_planetes nav ul li {
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.fin_description_planetes nav ul li a:hover {
+  color: white;
+  transition: all 350ms ease-in-out;
+  text-decoration: underline;
+}
+
+#galerie {
+  padding: 10%;
+  /* border: #15151588 solid 5px; */
+  scroll-margin-top: -130px;
+}
+
+#galerie h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  padding: 2.5%;
+}
+.galerie ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+.galerie ul li {
+  aspect-ratio: 1;
+  width: calc(33.33% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galerie ul li img {
+  /* width: 19vw; */
+
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s;
+  margin: 0;
+  max-width: 100%;
+  max-height: 100%;
+  filter: brightness(0.8);
+}
+
+.galerie ul li:hover {
+  cursor: pointer;
+}
+
+.galerie ul li:hover img {
+  transform: scale(1.2);
+  filter: brightness(1.4);
+}
+
+.galerie ul li img:hover {
+  width: 100%;
+  filter: brightness(1.4);
+  z-index: 1000;
+}
+
+#missions-spatiales {
+  padding: 5%;
+  scroll-margin-top: -60px;
+}
+
+#missions-spatiales h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  padding: 2.5%;
+}
+
+#missions-spatiales h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.bande-annonce video {
+  align-items: center;
+  margin-left: 30.5%;
+  margin-right: auto;
+  min-height: 40vh;
+  border-radius: 15px;
+  max-width: 100%;
+  margin-top: 2%;
+}
+
+.article h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.article .titre-secondaire {
+  font-size: 1.8rem;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.article > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.colonne {
+  width: 45%;
+}
+
+.colonne p {
+  font-size: 1.1rem;
+  color: whitesmoke;
+  line-height: normal;
+  margin-bottom: 2%;
+  margin-top: 10%;
+}
+
+.image-article {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+  margin-top: -1%;
+}
+
+@media (min-width: 1441px) {
+  #mercure p {
+    font-size: 1.5rem;
+  }
+  #venus p {
+    font-size: 1.5rem;
+  }
+  #terre p {
+    font-size: 1.35rem;
+  }
+  #Mars p {
+    font-size: 1.5rem;
+  }
+  #neptune p {
+    font-size: 1.5rem;
+  }
+  #Jupiter p {
+    font-size: 1.5rem;
+  }
+  #uranus p {
+    font-size: 1.6rem;
+  }
+  #saturne p {
+    font-size: 1.5rem;
+  }
+}
+
+#données {
+  padding-top: 8%;
+  min-height: 100vh;
+  scroll-margin-top: -110px;
+}
+
+#données h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1%;
+  padding-top: 2.5%;
+}
+
+table {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 15px;
+  margin-top: 5%;
+  margin-bottom: auto;
+}
+
+thead {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-size: 1.1em;
+}
+
+th {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+tbody tr {
+  border-bottom: 1px solid #ddd;
+}
+
+td {
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 1em;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e4e4e4;
+}
+
+tfoot {
+  background-color: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  font-style: italic;
+  padding: 10px 0;
+}
+
+#donnees h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+
+#inscription {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteneur-inscription {
+  width: 40%;
+  box-shadow: 0 0 8px rgba(171, 170, 170, 0.5);
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #333;
+  border-radius: 15px;
+  color: white;
+  min-height: 70vh;
+  background: linear-gradient(
+    to right,
+    rgba(145, 145, 145, 0.5) 0%,
+    rgba(0, 0, 0, 0.418) 5%,
+    rgba(0, 0, 0, 0.219) 95%,
+    rgba(122, 122, 122, 0.534) 100%
+  );
+}
+
+#inscription h1 {
+  text-align: center;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1%;
+  padding-top: 2.5%;
+}
+
+#inscription input {
+  border-radius: 5px;
+  border: solid 2px #151515;
+}
+
+#inscription label {
+  padding-top: 3%;
+}
+
+.btn-inscription {
+  text-align: center;
+  align-items: center;
+}
+
+.btn-inscription input:hover {
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+footer {
+  height: auto;
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.325) 10%,
+    rgba(0, 0, 0, 0.325) 90%,
+    rgb(0, 0, 0) 100%
+  );
+  background-color: rgb(19, 19, 19);
+  min-height: 10%;
+  display: flex;
+  background-color: #151515;
+  border: #7777773b solid;
+  color: white;
+  padding: 2%;
+  font-size: 0.7rem;
+}
+
+footer h2 {
+  font-size: 1rem;
+}
+
+footer img {
+  border-radius: 10px;
+  width: 15%;
+  padding: 1%;
+}
+
+.reseaux-sociaux {
+  margin-left: 4%;
+}
+
+footer div {
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 50%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+  /* border: #f9f9f9 solid; */
+}
+
+footer p {
+  font-size: 0.5rem;
+}
+
+footer li {
+  padding-top: 1%;
+}
+
+footer a {
+  color: #333;
+  padding-top: 1%;
+}
+
+footer a:hover {
+  color: #fff;
+}
+
+header p{
+  color: white;
+  width: 100%;
+  padding-top: 97vh;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+footer img:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="assets/js/index.js" defer></script>
+    <title>Tp Final</title>
+  </head>
+
+  <body>
+    <header id="accueil">
+      <!-- Première navigation (principal) -->
+      <nav class="nav-principal">
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li>-</li>
+          <li><a href="#planetes">Planètes</a></li>
+          <li>-</li>
+          <li><a href="#données">Données</a></li>
+          <li>-</li>
+          <li><a href="#galerie">Galerie</a></li>
+          <li>-</li>
+          <li><a href="#missions-spatiales">Missions spatiales</a></li>
+          <li>-</li>
+          <li><a href="#inscription">Inscription</a></li>
+        </ul>
+      </nav>
+      <p>
+        TP2 --- Emmanuel Larivée --- 582-1W1, Mise en page Web --- Techniques
+        d’intégration multimedia, Collège de Maisonneuve, automne 2024 ---
+        https://github.com/Magimaster22/2e-test.git
+      </p>
+    </header>
+
+    <main>
+      <section id="planetes">
+        <div class="section-planetes">
+          <h1>Les Planètes</h1>
+          <h2>Voici celles de notre système solaire</h2>
+        </div>
+        <div>
+          <img src="assets/img/image des planetes.jpg" alt="Les planètes" />
+        </div>
+        <div class="texteSurPlanetes">
+          <h1>Combien y a-t-il de planètes dans le système solaire ?</h1>
+          <h2>
+            On compte aujourd’hui 8 planètes dans le Système solaire : Mercure,
+            Vénus, la Terre, Mars, Jupiter, Saturne, Uranus et Neptune. Depuis
+            2006, Pluton n’est plus classée comme une planète à part entière
+            mais comme une planète naine transneptunienne.
+          </h2>
+        </div>
+
+        <!-- Deuxième navigation (planètes) -->
+        <nav class="listePlanetes">
+          <h1>Choisi la description d'une planète</h1>
+          <ul>
+            <li><a href="#mercure">Mercure</a></li>
+            <li><a href="#venus">Vénus</a></li>
+            <li><a href="#terre">Terre</a></li>
+            <li><a href="#Mars">Mars</a></li>
+            <li><a href="#Jupiter">Jupiter</a></li>
+            <li><a href="#saturne">Saturne</a></li>
+            <li><a href="#uranus">Uranus</a></li>
+            <li><a href="#neptune">Neptune</a></li>
+          </ul>
+        </nav>
+      </section>
+
+      <section class="DescriptionPlanetes">
+        <div class="conteneurdescription">
+          <h2 class="titreplanetes">Mercure</h2>
+          <div id="mercure">
+            <img src="assets/img/Mercure.jpg.webp" alt="image de mercure" />
+            <p>
+              Trois fois plus petite que la Terre en diamètre, Mercure est la
+              planète la plus proche du Soleil, à "seulement" 50 millions de
+              kilomètres de ce dernier. Mercure met 88 jours à faire le tour du
+              Soleil. Cette planète est tellurique, c’est-à-dire qu’elle est
+              essentiellement composée de roches et de métaux. Sa forte densité
+              suggère qu’un impact géant l’a dépouillée d’une partie de son
+              manteau rocheux, lui laissant un noyau métallique disproportionné.
+              Par ailleurs, elle n’a aucun satellite naturel. Mercure ne possède
+              pas d’atmosphère notable, ce qui la rend particulièrement sujette
+              aux bombardements de météorites, et qui explique la présence de
+              cratères qui ne subissent pas d’érosion à sa surface. Sans
+              atmosphère pour réguler les températures entre les parties
+              éclairées et non éclairées par le Soleil, ces températures peuvent
+              varier entre - 180 °C à presque 430 °C.
+            </p>
+          </div>
+          <!-- Répéter pour chaque planète -->
+          <h2 class="titreplanete">Vénus</h2>
+          <div id="venus">
+            <p>
+              Vénus est la deuxième planète la plus proche du Soleil. Sa taille
+              et sa période de révolution sont proches de celles de la Terre.
+              Cette planète tellurique a la particularité de tourner sur
+              elle-même dans le sens inverse des autres planètes (vue du Nord,
+              elle tourne dans le sens des aiguilles d’une montre), ce qui fait
+              que le soleil s’y lève à l’ouest et se couche à l’est. On dit que
+              sa rotation est "rétrograde". Son atmosphère, très dense, est
+              composée presque intégralement de dioxyde de carbone (CO2). La
+              pression à sa surface y est très forte : plus de 90 fois
+              supérieure à celle sur Terre ! L’effet de serre y maintient des
+              températures autour de 470 °C, une chaleur suffisante pour faire
+              fondre le zinc. Cela fait d’elle la planète la plus chaude du
+              Système solaire.
+            </p>
+            <img src="assets/img/Venus-planete.jpg.webp" alt="image de venus" />
+          </div>
+
+          <h2 class="titreplanete">Terre</h2>
+          <div id="terre">
+            <img
+              src="assets/img/©-NASA-Unsplash.jpg.webp"
+              alt="image de la terre"
+            />
+            <p>
+              La Terre est la troisième planète la plus proche du Soleil. C’est
+              aussi la planète tellurique la plus grosse et la plus dense du
+              Système solaire. La forme de la Terre n’est pas parfaitement
+              sphérique : elle est aplatie aux deux pôles par l’effet de sa
+              rotation. Deux tiers de la surface terrestre sont recouverts d’eau
+              (peut-être apportée par des astéroïdes carbonés vers la fin de son
+              accrétion), ce qui explique son surnom de "planète bleue" !
+              L’abondance de sa forme liquide a joué un rôle majeur dans le
+              développement de la vie sur Terre. La Terre possède un satellite
+              naturel, la Lune, possiblement apparue après une collision avec
+              une autre protoplanète dans sa première centaine de millions
+              d’années d’existence !
+            </p>
+          </div>
+
+          <h2 class="titreplanete">Mars</h2>
+          <div id="Mars">
+            <p>
+              Mars est la quatrième planète la plus proche du Soleil. Elle est
+              neuf fois moins massive que la Terre, car sa zone était appauvrie
+              en solides lors de sa formation. Avec une durée du jour proche de
+              la nôtre, Mars a une atmosphère ténue de dioxyde de carbone qui
+              précipite périodiquement sur les calottes glaciaires des pôles,
+              mais aussi des nuages ! On trouve parfois à sa surface des
+              tempêtes emportant énormément de poussière riche en oxyde de fer
+              sur leur chemin. Cette poussière omniprésente donne à l’air
+              martien une couleur rouge remarquable qui lui a valu son surnom de
+              "planète rouge". Les conditions martiennes sont inhospitalières,
+              mais son atmosphère a été plus dense il y a 4 milliards d’années,
+              et de l’eau liquide semble même avoir circulé à la surface.
+            </p>
+            <img src="assets/img/Mars.jpg.webp" alt="image de mars" />
+          </div>
+
+          <h2 class="titreplanete">Jupiter</h2>
+          <div id="Jupiter">
+            <img
+              src="assets/img/Jupiter-tache-planete.jpg.webp"
+              alt="image de jupiter"
+            />
+            <p>
+              Cinquième planète la plus proche du Soleil, Jupiter est une géante
+              gazeuse. C’est la plus grande planète du Système solaire, avec un
+              rayon mesurant 11 fois celui de la Terre, pour 318 fois sa masse !
+              Lors de sa formation, elle a pu capter du gaz du disque
+              protoplanétaire primordial, qui était cent fois plus abondant que
+              la poussière. Son noyau solide, représentant peut-être une dizaine
+              de masses terrestres, est enfouie dans une épaisse atmosphère.
+              Celle-ci est marquée par sa "Grande Tache Rouge", une gigantesque
+              tempête qui tourbillonne depuis les débuts des observations
+              télescopiques, il y a plusieurs siècles. Cette tache seule est
+              déjà plus grande que la Terre ! À la "surface" de la planète (à un
+              niveau d’altitude où la pression est égale à celle au niveau de la
+              mer sur Terre), il fait – 145 °C sur Jupiter.
+            </p>
+          </div>
+
+          <h2 class="titreplanete">Saturne</h2>
+          <div id="saturne">
+            <p>
+              Saturne est la sixième planète la plus proche du Soleil. Géante
+              gazeuse, elle est plus petite que Jupiter. Elle est
+              particulièrement connue pour ses anneaux, s’étendant à presque 300
+              000 km de la planète, pour une épaisseur d’une dizaine de mètres.
+              Ils sont formés de débris de roches et de glace, pouvant atteindre
+              la taille d’un poing ou d’un camion. Ces débris seraient issus de
+              satellites désintégrés. Comme pour Jupiter, le temps d’une
+              rotation est bien court sur Saturne : il suffit de 10 h 30 pour
+              que s’y passe une journée. En revanche, son année (révolution
+              autour du Soleil) prend presque 30 années terrestres. Et pour
+              finir, le méthane, qui aux températures frigorifiques régnantes
+              (autour de - 180 °C) peut être gazeux, liquide ou solide, y
+              connaît un cycle comparable au cycle de l’eau sur Terre.
+            </p>
+            <img src="assets/img/Saturne.png.webp" alt="image de saturne" />
+          </div>
+
+          <h2 class="titreplanete">Uranus</h2>
+          <div id="uranus">
+            <img src="assets/img/Uranus.jpg.webp" alt="image d'Uranus" />
+            <p>
+              Uranus est la 7e planète en partant du Soleil, elle est plus
+              petite que Saturne, mais reste au moins 4 fois plus grande que la
+              Terre. C’est une géante glacée, composée d’hydrogène, d’hélium, de
+              méthane et d’un peu d’ammoniac. Contrairement aux planètes plus
+              proches, Uranus n’était pas connue dans l’Antiquité, mais a été
+              découverte en 1781 par William Herschel. Uranus se démarque par un
+              axe de rotation presque couché sur son plan orbital. Cela signifie
+              que ses pôles sont alternativement plongés dans l’obscurité ou la
+              lumière durant des années… Ses anneaux, difficiles à observer et
+              situés dans son plan équatorial, sont ainsi sensiblement
+              perpendiculaires au plan de l’orbite.
+            </p>
+          </div>
+
+          <h2 class="titreplanete">Neptune</h2>
+          <div id="neptune">
+            <p>
+              Huitième planète en partant du Soleil, la plus éloignée que l’on
+              connaisse pour le moment, elle a été découverte par le calcul par
+              Le Verrier et Adams, sur la base des perturbations de l’orbite
+              d’Uranus, comme l’a confirmé l’observation en 1846. Neptune est
+              aussi une géante de glace. Comme les autres planètes géantes,
+              Neptune n’a pas de surface solide. Possédant du méthane dans son
+              atmosphère, elle a la même teinte verdâtre qu’Uranus
+              (contrairement à la couleur bleu profond qu’on lui attribuait
+              auparavant). Une grande tache sombre, aussi grande que la Terre,
+              se démarque à sa surface. Cette planète est balayée par les vents
+              les plus rapides du Système solaire, certains pouvant pousser des
+              nuages à 2 000 km/h !
+            </p>
+            <img src="assets/img/Neptune.png.webp" alt="image de neptune" />
+          </div>
+        </div>
+        <div class="fin_description_planetes">
+          <nav>
+            <ul>
+              <li><a href="#accueil">Retourner à l'Accueil</a></li>
+              <li><a href="#planetes">Retourner aux Planètes</a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section id="données">
+        <h1>Caractéristiques des planètes du système solaire</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>Planètes</th>
+              <th>Diamètre (km)</th>
+              <th>Distance du Soleil (millions km)</th>
+              <th>Durée d'une journée (heures)</th>
+              <th>Durée d'une année (jours)</th>
+              <th>Nombre de lunes</th>
+              <th>Température moyenne (°C)</th>
+              <th>Atmosphère</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Mercure</td>
+              <td>4 880</td>
+              <td>57.9</td>
+              <td>58.6</td>
+              <td>88</td>
+              <td>0</td>
+              <td>167°C</td>
+              <td>Absente, trace d'oxygène, sodium</td>
+            </tr>
+            <tr>
+              <td>Vénus</td>
+              <td>12 104</td>
+              <td>108.2</td>
+              <td>243</td>
+              <td>225</td>
+              <td>0</td>
+              <td>464°C</td>
+              <td>Principalement du dioxyde de carbone</td>
+            </tr>
+            <tr>
+              <td>Terre</td>
+              <td>12 742</td>
+              <td>149.6</td>
+              <td>23.9</td>
+              <td>365</td>
+              <td>1 (Lune)</td>
+              <td>15°C</td>
+              <td>Azote, oxygène, argon</td>
+            </tr>
+            <tr>
+              <td>Mars</td>
+              <td>6 779</td>
+              <td>227.9</td>
+              <td>24.6</td>
+              <td>687</td>
+              <td>2 (Phobos, Déimos)</td>
+              <td>-60°C</td>
+              <td>Carbon dioxide, argon</td>
+            </tr>
+            <tr>
+              <td>Jupiter</td>
+              <td>139 820</td>
+              <td>778.3</td>
+              <td>9.9</td>
+              <td>4 332</td>
+              <td>80+</td>
+              <td>-145°C</td>
+              <td>Hydrogène, hélium</td>
+            </tr>
+            <tr>
+              <td>Saturne</td>
+              <td>116 460</td>
+              <td>1 429</td>
+              <td>10.7</td>
+              <td>10 759</td>
+              <td>82+</td>
+              <td>-178°C</td>
+              <td>Hydrogène, hélium</td>
+            </tr>
+            <tr>
+              <td>Uranus</td>
+              <td>50 724</td>
+              <td>2 870</td>
+              <td>17.2</td>
+              <td>30 687</td>
+              <td>27+</td>
+              <td>-224°C</td>
+              <td>Hydrogène, hélium, méthane</td>
+            </tr>
+            <tr>
+              <td>Neptune</td>
+              <td>49 244</td>
+              <td>4 498</td>
+              <td>16.1</td>
+              <td>60 190</td>
+              <td>14+</td>
+              <td>-214°C</td>
+              <td>Hydrogène, hélium, méthane</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="8">Source: NASA</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+
+      <section id="galerie">
+        <h1>Voici une galerie d'images capturées par nos radars spatiaux.</h1>
+        <div>
+          <nav class="galerie">
+            <ul>
+              <li>
+                <img
+                  src="assets/img/pexels-agnieszka-taggart-3157904-28343999.jpg"
+                  alt="Image 1"
+                />
+              </li>
+              <li>
+                <img
+                  src="assets/img/pexels-felixmittermeier-956999.jpg"
+                  alt="Image 2"
+                />
+              </li>
+
+              <li>
+                <img
+                  src="assets/img/etoiles-galaxie-espace-extra-atmospherique-ciel-nuit-univers-fond-etoile-noir-starfield-brillant_146539-338.avif"
+                  alt="Image 6"
+                />
+              </li>
+              <li>
+                <img src="assets/img/pexels-pixabay-2150.jpg" alt="Image 3" />
+              </li>
+              <li>
+                <img
+                  src="assets/img/pexels-sheken-astro-211351917-14768795.jpg"
+                  alt="Image 4"
+                />
+              </li>
+              <li><img src="assets/img/black hole.jpg" alt="Image 5" /></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <section id="missions-spatiales">
+        <div class="bande-annonce">
+          <h1>
+            Voici des articles qui parle de plusieurs de nos missions spatiales
+          </h1>
+          <h2>
+            Voici un documentaire sur la Station Spaciale International (ISS)
+          </h2>
+          <video
+            src="assets/videos/"
+            controls
+            poster="assets/img/téléchargement (1).png"
+          ></video>
+        </div>
+
+        <article class="article">
+          <h1>Les Missions Spatiales : Exploration de l'Inconnu</h1>
+          <h2 class="titre-secondaire">
+            Les avancées technologiques et leurs impacts
+          </h2>
+
+          <div>
+            <div class="colonne">
+              <p>
+                - Les missions spatiales ont transformé notre compréhension de
+                l'univers. Grâce aux technologies modernes, nous sommes capables
+                d'explorer des zones lointaines de notre système solaire, et
+                au-delà. Ces missions sont cruciales pour découvrir de nouvelles
+                planètes et analyser la composition de différentes étoiles et
+                corps célestes.
+              </p>
+              <img
+                src="assets/img/mission spatiale.jpg"
+                alt="Image de mission spatiale"
+                class="image-article"
+              />
+              <p>
+                - Les missions menées par des agences comme la NASA ou l'ESA ont
+                permis d'envoyer des sondes vers Mars, d'étudier les atmosphères
+                des géantes gazeuses et d'explorer des astéroïdes. Ces
+                découvertes sont essentielles pour la recherche scientifique,
+                mais elles ont aussi des implications pratiques pour la vie sur
+                Terre.
+              </p>
+              <img
+                src="assets/img/mars exploration.jpg"
+                alt="Exploration de Mars"
+                class="image-article"
+              />
+            </div>
+
+            <div class="colonne">
+              <p>
+                - Une des missions les plus emblématiques reste le programme
+                Apollo, qui a permis à l'Homme de marcher sur la Lune pour la
+                première fois. Cette mission a non seulement prouvé les
+                capacités technologiques de l'époque, mais a aussi lancé une
+                nouvelle ère d'exploration spatiale. Aujourd'hui, des projets
+                comme Artemis visent à ramener l'Homme sur la Lune, mais aussi à
+                préparer l'exploration de Mars.
+              </p>
+              <img
+                src="assets/img/mission apollo.jpg"
+                alt="Programme Apollo"
+                class="image-article"
+              />
+              <p>
+                - Les recherches récentes montrent que l'exploration de l'espace
+                pourrait avoir des applications significatives sur Terre,
+                notamment dans le domaine des nouvelles technologies, des
+                communications et de la médecine. L'avenir de l'exploration
+                spatiale est prometteur, et des missions futures pourraient bien
+                répondre à des questions encore sans réponse sur l'origine de la
+                vie et l'univers.
+              </p>
+              <img
+                src="assets/img/technologies spatiales.jpg"
+                alt="Technologies spatiales"
+                class="image-article"
+              />
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="inscription">
+        <h1>Inscription aux actualités spatiales</h1>
+        <form class="conteneur-inscription">
+          <div class="input-group">
+            <label for="nom">Nom</label>
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              required
+              maxlength="100"
+              minlength="2"
+              class="label"
+              placeholder="Votre Nom"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="prenom">Prénom</label>
+            <input
+              type="text"
+              name="prenom"
+              id="prenom"
+              required
+              minlength="2"
+              maxlength="100"
+              placeholder=" Votre Prénom"
+              class="label"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="courriel">Courriel</label>
+            <input
+              type="email"
+              name="courriel"
+              id="courriel"
+              required
+              maxlength="200"
+              placeholder=" Votre courriel -- xx@xx"
+              class="label"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="motdepasse">Mot de passe</label>
+            <input
+              type="password"
+              name="motdepasse"
+              id="motdepasse"
+              required
+              minlength=" 8 "
+              maxlength="200"
+              placeholder=" Votre Mot De Passe"
+              class="label"
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="date"
+              >Date de naissance
+              <span class="Optionnel">- Optionnel</span></label
+            >
+            <input type="date" name="date" id="date" maxlength="4" />
+          </div>
+
+          <div class="input-group">
+            <p>
+              Voulez-vous recevoir des notifications sur l'actualités du jour?
+            </p>
+            <label for="abonnement">Oui</label>
+            <input
+              type="checkbox"
+              name="catégorie-1"
+              id="abonnement"
+              value="Oui"
+            />
+          </div>
+
+          <div class="btn-inscription">
+            <input type="reset" value="Effacer" />
+            <input type="submit" value="Envoyer" />
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-container">
+        <div>
+          <h2>Adresse Cégep Maisonneuve</h2>
+          <p>3800 R. Sherbrooke E</p>
+        </div>
+        <div>
+          <h2>Liens importants</h2>
+          <ul>
+            <li>
+              <a href="https://www.cmaisonneuve.qc.ca/">Maisonneuve.qc.ca</a>
+            </li>
+            <li>
+              <a href="https://www.cmaisonneuve.qc.ca/nous-joindre/"
+                >Maisonneuve.contact</a
+              >
+            </li>
+            <li>
+              <a href="https://www.nasa.gov/">Nasa Officiel</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h2>Description du département</h2>
+          <p>
+            Technique de l'Informatique et du Multimédia (TIM) du Cégep
+            Maisonneuve offre des formations dans les domaines de la création
+            numérique, du développement web, de la gestion de contenu multimédia
+            et des technologies de l'informatique.
+          </p>
+        </div>
+        <div class="reseaux-sociaux">
+          <h2>Réseaux sociaux</h2>
+          <img src="assets/img/facebook.png" alt="" />
+          <img src="assets/img/Instagram noir blanc.png" alt="" />
+          <img src="assets/img/X.png" alt="" />
+        </div>
+        <div>
+          <h2>Avis de confidentialité | Privacy Notice</h2>
+          <p>
+            <a
+              href="https://www.cmaisonneuve.qc.ca/regles-de-confidentialite/"
+              target="_blank"
+              >Lire l'avis de confidentialité</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

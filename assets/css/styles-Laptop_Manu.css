@@ -1,0 +1,478 @@
+@import url("reset.css");
+
+@font-face {
+  font-family: "nasa";
+  src: url("../fonts/nasalization-rg.otf");
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+  font-family: nasa;
+  transition: all 350ms ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.675) 0%,
+      rgba(0, 0, 0, 0.418) 10%,
+      rgba(0, 0, 0, 0.219) 90%,
+      rgba(0, 0, 0, 0.685) 100%
+    ),
+    url("../img/4k-earth-blue-flare-xd07028747gejbm0.jpg");
+  background-size: contain;
+}
+
+.nav-principal {
+  background-color: black;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 65px;
+  /* position: fixed; */
+  padding: 10px;
+}
+
+.nav-principal ul {
+  list-style: none;
+  padding-top: 1%;
+}
+
+.nav-principal ul li {
+  display: inline;
+  margin-right: 20px;
+  color: #bbbbbb;
+  font-size: 1.5rem;
+}
+
+.nav-principal ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1%;
+  border-radius: 15px;
+  transition: background-color 1s;
+}
+
+.nav-principal ul li a:hover {
+  background-color: #1e1e1e;
+  color: rgb(255, 255, 255);
+  /* POSÉ QUESTION AU PROF POURQUOI SCALE FONCTIONNE PAS  */
+  transform: scale(1.2);
+  transition: 0.5s;
+}
+
+header {
+  min-height: 100vh;
+}
+
+main section {
+  background-image: linear-gradient(
+    to right,
+    rgb(0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.325) 10%,
+    rgba(0, 0, 0, 0.325) 90%,
+    rgb(0, 0, 0) 100%
+  );
+  background-color: rgb(19, 19, 19);
+  min-height: 100vh;
+
+  background-color: #151515;
+}
+
+.texteSurPlanetes h1 {
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  padding: 1%;
+  padding-top: 2.5%;
+}
+
+.texteSurPlanetes h2 {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+main section div img {
+  border-radius: 10px;
+  margin-left: 15%;
+  margin-top: 2%;
+  height: 90vh;
+  box-shadow: 0 0 8px rgba(171, 170, 170, 0.5);
+}
+
+main section div ul {
+  display: flex;
+  width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main section ul li {
+  color: white;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.texteSurPlanetes {
+  padding: 1%;
+}
+
+.listePlanetes {
+  text-align: center;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.listePlanetes ul {
+  list-style: none;
+  padding-top: 1.5%;
+}
+
+.listePlanetes ul li {
+  display: inline;
+  margin-right: 20px;
+  color: #bbbbbb;
+  font-size: 1.5rem;
+}
+
+.listePlanetes ul li a {
+  color: #bbbbbb;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 1%;
+  border-radius: 15px;
+  transition: background-color 1s;
+}
+
+.listePlanetes li a:hover {
+  /* transform: scale(1.9); */
+  color: white;
+  text-decoration: underline;
+  transition: all 400ms ease-in-out;
+}
+
+.listePlanetes h1 {
+  color: white;
+  font-family: nasa;
+}
+
+.DescriptionPlanetes {
+  padding-top: 10%;
+}
+
+.conteneur-description {
+  width: 95%;
+
+  margin-left: auto;
+  margin-right: auto;
+  border: solid red 2px;
+}
+
+.titreplanete {
+  padding-top: 15%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.titreplanetes {
+  padding-top: 5%;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.section-planetes h1 {
+  font-size: 3rem;
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.section-planetes h2 {
+  font-size: 1rem;
+  color: white;
+  text-align: center;
+}
+
+#mercure {
+  color: white;
+  margin-left: -5%;
+  display: flex;
+}
+
+#mercure p {
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#venus {
+  color: white;
+  display: flex;
+}
+
+#venus p {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#venus img {
+  margin-left: 7%;
+  height: 60%;
+  width: 50%;
+}
+
+#terre {
+  color: white;
+  display: flex;
+  margin-left: -5%;
+}
+
+#terre p {
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#terre img {
+  max-width: 50%;
+  height: 40%;
+}
+
+#Mars {
+  color: white;
+  display: flex;
+}
+
+#Mars p {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#Mars img {
+  margin-left: 7%;
+  height: 90vh;
+}
+
+#Jupiter {
+  color: white;
+  display: flex;
+  margin-left: -5%;
+}
+
+#Jupiter p {
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#Jupiter img {
+  height: 90vh;
+}
+
+#saturne {
+  color: white;
+  display: flex;
+}
+
+#saturne p {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#saturne img {
+  margin-left: 7%;
+  height: 90vh;
+}
+
+#uranus {
+  color: white;
+  display: flex;
+  margin-left: -5%;
+}
+
+#uranus p {
+  margin-left: 3%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#uranus img {
+  height: 90vh;
+}
+
+#neptune {
+  color: white;
+  display: flex;
+}
+
+#neptune p {
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 20%;
+  padding: 2%;
+  font-size: 1.145rem;
+}
+
+#neptune img {
+  margin-left: 7%;
+  height: 87vh;
+}
+
+.fin_description_planetes nav {
+  font-size: 1.5rem;
+  margin-top: 1%;
+}
+
+.fin_description_planetes nav ul li a {
+  font-size: 1.5rem;
+  color: #bbbbbb;
+  list-style: none;
+  text-decoration: none;
+}
+
+.fin_description_planetes nav ul li {
+  padding: 2%;
+  border-radius: 15px;
+}
+
+.fin_description_planetes nav ul li a:hover {
+  color: white;
+  transition: all 350ms ease-in-out;
+  text-decoration: underline;
+}
+
+#galerie {
+  padding: 15%;
+  border: #15151588 solid 5px;
+}
+
+#galerie h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  padding: 2.5%;
+}
+.galerie ul {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.galerie ul li {
+  width: calc(33.33% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.galerie ul li img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.galerie ul li:hover {
+  cursor: pointer;
+}
+
+.galerie ul li:hover img {
+  transform: scale(1.2);
+}
+
+#missions-spatiales {
+  padding: 5%;
+}
+
+#missions-spatiales h1 {
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  padding: 2.5%;
+}
+
+#missions-spatiales h2 {
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.bande-annonce video {
+  align-items: center;
+  margin-left: 30.5%;
+  margin-right: auto;
+  min-height: 40vh;
+  border-radius: 15px;
+  max-width: 100%;
+  margin-top: 2%;
+}
+
+.article h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.article .titre-secondaire {
+  font-size: 1.8rem;
+  color: whitesmoke;
+  margin-bottom: 20px;
+}
+
+.article > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.colonne {
+  width: 45%;
+}
+
+.colonne p {
+  font-size: 1.1rem;
+  color: whitesmoke;
+  line-height: normal;
+  margin-bottom: 2%;
+  margin-top: 10%;
+}
+
+.image-article {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+  margin-top: -1%;
+}
